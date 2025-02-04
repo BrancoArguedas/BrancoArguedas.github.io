@@ -1,0 +1,81 @@
+body{
+    display: grid;
+    position: relative;
+    font-size: 62.5%;
+}
+
+.kanit-light {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.kanit-semibold {
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+/* ESTILO DEL HEADER */
+
+header{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    min-height: 4.25rem;
+}
+
+header>h2{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.navegacion{
+    display: none;
+}
+
+.hamburger-menu{
+    display: grid;
+    align-content: center;
+    gap: 0.2rem;
+    margin-right: 1rem;
+    height: auto;
+}
+
+.hamburger-menu>div{
+    height: 0.15rem;
+    width: 1.2rem;
+    background-color: black;
+    border-radius: 0.1rem;
+}
+
+/* SECCIÓN QUIEN SOY */
+
+.main-contenido{
+    margin-top: 4.25rem;
+}
+
+.quien-soy{
+    display: grid;
+    align-content: center;
+    padding: 0 2rem;
+}
+
+.quien-soy>h2{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* ICONO DE WHATSAPP */
+
+.icon-wspp{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 2rem 2rem 0;
+    font-size: 2.7rem;
+    color: #25D366;
+}
