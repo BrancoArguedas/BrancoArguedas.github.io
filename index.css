@@ -1,24 +1,40 @@
-body{
+body {
     display: grid;
     position: relative;
     font-size: 62.5%;
 }
 
-.kanit-light {
+.kanit-300 {
     font-family: "Kanit", serif;
     font-weight: 300;
     font-style: normal;
 }
-  
-.kanit-semibold {
+
+.kanit-300-italic {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.kanit-400 {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-600 {
     font-family: "Kanit", serif;
     font-weight: 600;
     font-style: normal;
-  }
+}
+
+a{
+    text-decoration: none;
+}
 
 /* ESTILO DEL HEADER */
 
-header{
+header {
     background-color: yellow;
     display: flex;
     align-items: center;
@@ -28,16 +44,16 @@ header{
     min-height: 4.25rem;
 }
 
-header>h2{
+header>h2 {
     margin-left: 1rem;
     font-size: 1.5rem;
 }
 
-.navegacion{
+.navegacion {
     display: none;
 }
 
-.hamburger-menu{
+.hamburger-menu {
     display: grid;
     align-content: center;
     gap: 0.2rem;
@@ -45,33 +61,36 @@ header>h2{
     height: auto;
 }
 
-.hamburger-menu>div{
+.hamburger-menu>div {
     height: 0.15rem;
     width: 1.2rem;
     background-color: black;
     border-radius: 0.1rem;
 }
 
-/* SECCIÓN QUIEN SOY */
+/* SECCIONES */
 
-.main-contenido{
+.main-contenido {
     margin-top: 4.25rem;
 }
 
-.quien-soy{
+.seccion {
     display: grid;
     align-content: center;
     padding: 0 2rem;
 }
 
-.quien-soy>h2{
+.seccion>h2 {
     padding: 1rem 0;
     text-align: center;
 }
 
+/* SECCIÓN ESTUDIOS */
+
+
 /* ICONO DE WHATSAPP */
 
-.icon-wspp{
+.icon-wspp {
     position: fixed;
     right: 0;
     bottom: 0;
