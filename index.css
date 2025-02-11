@@ -1,3 +1,8 @@
+html{
+    background: black;
+    color: white;
+}
+
 body {
     display: grid;
     position: relative;
@@ -30,11 +35,11 @@ body {
 /* ESTILO DEL HEADER */
 
 header {
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: static;
+    position: fixed;
+    backdrop-filter: blur(1rem);
     width: 100%;
     min-height: 5.5rem;
 }
@@ -58,7 +63,7 @@ header>h2 {
 .hamburger-menu>div {
     height: 0.2rem;
     width: 2rem;
-    background-color: black;
+    background-color: white;
     border-radius: 0.1rem;
 }
 
@@ -88,7 +93,6 @@ header>h2 {
 /* SECCIÓN ESTUDIOS */
 
 .lista-estudios{
-    padding: 0;
     list-style-type: none;
     display: grid;
     gap: 2rem;
@@ -96,24 +100,62 @@ header>h2 {
 
 .elemento-estudios{
     display: flex;
-    gap: 0.3rem;
-    align-items: top;
+    gap: 1rem;
 }
 
-.icono-lista{
-    width: 30px;
-    height: 30px;
+.icon-lista{
+    width: 3rem;
+    height: 3rem;
 }
 
 .titulo-estudios{
     font-size: 1.5rem;
+    color: white;   
 }
 
 .fecha-estudios{
     font-size: 1.1rem;
+    color: #c2c2c2;
 }
 
 .descripcion-estudios{
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* CONTENEDOR PROYECTOS */
+
+.contenedor-proyectos{
+    display: flex;
+    position: relative;
+    border: solid white 1px;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    gap: 0.5rem;
+    overflow-x: scroll;
+}
+
+.titulo-proyectos{
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    top: -30%;
+    background-color: black;
+    padding: 0 0.4rem;
+}
+
+.contenido-proyectos{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 30%;
+}
+
+.contenido-proyectos>h2,
+.contenido-proyectos>p{
     font-size: 1.2rem;
 }
 
@@ -124,6 +166,6 @@ header>h2 {
     right: 0;
     bottom: 0;
     margin: 0 2rem 2rem 0;
-    font-size: 2.8rem;
+    font-size: 8rem;
     color: #25D366;
 }

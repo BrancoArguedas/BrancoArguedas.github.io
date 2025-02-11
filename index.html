@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Kanit:wght@300;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Portafolio</title>
   </head>
   <body>
@@ -51,7 +58,7 @@
         <h2 class="kanit-600">Estudios</h2>
         <ul class="lista-estudios">
           <li class="elemento-estudios">
-            <ion-icon class="icono-lista" name="earth-outline"></ion-icon>
+            <img class="icon-lista" src="astronave.png" alt="AstroNave">
             <a href="gojo.jpeg" download="gojo.jpeg">
               <p class="kanit-400 titulo-estudios">Ingeniería de sistemas - Universidad Nacional del Callao</p>
               <p class="kanit-300-italic fecha-estudios">Jul 2021 - Actualidad</p>
@@ -59,7 +66,7 @@
             </a>
           </li>
           <li class="elemento-estudios">
-            <ion-icon class="icono-lista" name="sparkles-outline"></ion-icon>
+            <img class="icon-lista" src="saturno.png" alt="Saturno">
             <a href="#">
               <p class="kanit-400 titulo-estudios">Base de datos Nivel 1/2 - Pontificia Universidad Católica del Perú</p>
               <p class="kanit-300-italic fecha-estudios">Jul 2024 - Ago 2024</p>
@@ -69,20 +76,29 @@
         </ul>
       </section>
       <section class="seccion">
-        <h2 class="kanit-semibold">Proyectos</h2>
+        <h2 class="kanit-600">Proyectos</h2>
+        <div class="contenedor-proyectos">
+          <h2 class="kanit-400 titulo-proyectos">Programación Web</h2>
+          <a href="https://contigo-voy.com/" class="contenido-proyectos">
+            <h2>Contigo voy</h2>
+            <p>Página para psicólogos y pacientes donde puedan separar citas y pagar mediante la página.</p>
+          </a>
+          <a href="https://www.digimediamkt.com/" class="contenido-proyectos">
+            <h2>Digimedia Mkt</h2>
+            <p>Página informativa de una empresa de marketing donde se pueda contactar e informar sobre la empresa.</p>
+          </a>
+          <a href="https://asdenperu.com/" class="contenido-proyectos">
+            <h2>Asden</h2>
+            <p>Página que informa sobre una ONG donde podemos colaborar o contactarnos con la ONG.</p>
+          </a>
+          
+        </div>
       </section>
     </main>
 
     <a href="" class="icon-wspp">
       <ion-icon name="logo-whatsapp"></ion-icon>
     </a>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    
   </body>
 </html>
